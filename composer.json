@@ -13,6 +13,11 @@
             "Ehystiv\\SrMake\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+          "Ehystiv\\SrMake\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Stefano Bichicchi",
@@ -29,5 +34,12 @@
     "require-dev": {
         "pestphp/pest": "^3.5",
         "orchestra/testbench": "^9.5"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Ehystiv\\SrMake\\Providers\\PackageServiceProvider"
+        ]
+      }
     }
 }
