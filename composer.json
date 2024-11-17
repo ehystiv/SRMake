@@ -1,13 +1,27 @@
 {
     "name": "ehystiv/sr-make",
-    "description": "Simple Repositoy & Service generator for Laravel",
+    "description": "Simple Repository & Service generator for Laravel",
+
     "type": "library",
     "version": "1.0.1",
+
+    "authors": [
+      {
+        "name": "Stefano Bichicchi",
+        "email": "ehystiv@gmail.com"
+      }
+    ],
+    "license": "MIT",
+
     "require": {
-        "php": "^8.1",
+        "php": "^8.0",
         "illuminate/support": "^11.32"
     },
-    "license": "MIT",
+    "require-dev": {
+      "pestphp/pest": "^3.5",
+      "orchestra/testbench": "^9.5"
+    },
+
     "autoload": {
         "psr-4": {
             "Ehystiv\\SrMake\\": "src/"
@@ -18,14 +32,18 @@
           "Ehystiv\\SrMake\\Tests\\": "tests/"
         }
     },
-    "authors": [
-        {
-            "name": "Stefano Bichicchi",
-            "email": "ehystiv@gmail.com"
-        }
-    ],
+
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Ehystiv\\SrMake\\Providers\\PackageServiceProvider"
+        ]
+      }
+    },
+
     "minimum-stability": "stable",
     "prefer-stable": true,
+
     "config": {
       "sort-packages": true,
       "preferred-install": "dist",
@@ -33,16 +51,5 @@
       "allow-plugins": {
         "pestphp/pest-plugin": true
       }
-  },
-    "require-dev": {
-        "pestphp/pest": "^3.5",
-        "orchestra/testbench": "^9.5"
-    },
-    "extra": {
-      "laravel": {
-        "providers": [
-          "Ehystiv\\SrMake\\Providers\\PackageServiceProvider"
-        ]
-      }
-    }
+  }
 }
