@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "require": {
         "php": "^8.1",
-        "illuminate/support": "^12.0"
+        "illuminate/support": "^11.32"
     },
     "license": "MIT",
     "autoload": {
@@ -19,13 +19,15 @@
             "email": "ehystiv@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require-dev": {
-        "pestphp/pest": "3.x-dev"
-    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "config": {
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.5",
+        "orchestra/testbench": "^9.5"
     }
 }
