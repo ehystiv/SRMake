@@ -2,7 +2,7 @@
     "name": "ehystiv/sr-make",
     "description": "Simple Repositoy & Service generator for Laravel",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "require": {
         "php": "^8.1",
         "illuminate/support": "^11.32"
