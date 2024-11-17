@@ -2,10 +2,39 @@
 
 namespace {{ namespace }};
 
-public class {{ class }}
+class {{ class }}
 {
     public function __construct(
         //
     ) {}
 
+    public funtion all()
+    {
+        //
+    }
+
+    public funtion find(int $id)
+    {
+        //
+    }
+
+    public funtion findBy(string $column, mixed $value)
+    {
+        //
+    }
+
+    public funtion update(int $id, mixed $value)
+    {
+        //
+    }
+
+    public funtion delete(int $id)
+    {
+        //
+    }
+
+    public funtion restore(int $id)
+    {
+        //
+    }
 }

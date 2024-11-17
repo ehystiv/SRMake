@@ -7,7 +7,7 @@ use Illuminate\Console\GeneratorCommand;
 
 final class RepositoryMakeCommand extends GeneratorCommand
 {
-    protected $signature = "make:repository {name : The repository name}";
+    protected $signature = "make:repository {name? : The repository name}";
 
     protected $description = "Create a new Repository";
 
@@ -20,6 +20,18 @@ final class RepositoryMakeCommand extends GeneratorCommand
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return "{$rootNamespace}\\Http\\Repositories";
+        return "App\\Http\\Repositories";
+    }
+
+    /**
+     * Prompt for missing input arguments using the returned questions.
+     *
+     * @return array<string, string>
+     */
+    protected function promptForMissingArgumentsUsing(): array
+    {
+        return [
+            'name' => 'What should it be called?',
+        ];
     }
 }
