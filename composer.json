@@ -1,6 +1,6 @@
 {
     "name": "ehystiv/sr-make",
-    "description": "Simple Repository & Service generator for Laravel",
+    "description": "Simple Repository & Service class generator for Laravel",
 
     "type": "library",
     "version": "1.0.1",
