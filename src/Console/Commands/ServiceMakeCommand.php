@@ -8,7 +8,7 @@ use Illuminate\Contracts\Console\PromptsForMissingInput;
 
 final class ServiceMakeCommand extends GeneratorCommand implements PromptsForMissingInput
 {
-    protected $signature = "make:service {name? : The service name} ";
+    protected $signature = "make:service {name : The service name} ";
 
     protected $description = "Create a new Service";
 

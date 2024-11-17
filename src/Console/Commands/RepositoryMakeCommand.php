@@ -7,7 +7,7 @@ use Illuminate\Console\GeneratorCommand;
 
 final class RepositoryMakeCommand extends GeneratorCommand
 {
-    protected $signature = "make:repository {name? : The repository name}";
+    protected $signature = "make:repository {name : The repository name}";
 
     protected $description = "Create a new Repository";
 
