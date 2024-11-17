@@ -11,7 +11,7 @@ final class RepositoryMakeCommand extends GeneratorCommand
 
     protected $description = "Create a new Repository";
 
-    protected $type = 'Repository';
+    protected $type = 'class';
 
     protected function getStub(): string
     {

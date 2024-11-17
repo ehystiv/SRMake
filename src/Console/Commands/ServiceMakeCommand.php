@@ -12,7 +12,7 @@ final class ServiceMakeCommand extends GeneratorCommand implements PromptsForMis
 
     protected $description = "Create a new Service";
 
-    protected $type = 'Service';
+    protected $type = 'class';
 
     protected function getStub(): string
     {
