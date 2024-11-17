@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Ehystiv\SRmake\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 
