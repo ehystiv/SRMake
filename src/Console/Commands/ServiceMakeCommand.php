@@ -20,6 +20,6 @@ final class ServiceMakeCommand extends GeneratorCommand
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return "{$rootNamespace}\\SRmake";
+        return "{$rootNamespace}\\Http\\Services";
     }
 }

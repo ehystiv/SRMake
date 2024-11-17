@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Ehystiv\SRmake\Providers;
 
+use Ehystiv\SRmake\Console\Commands\RepositoryMakeCommand;
 use Ehystiv\SRmake\Console\Commands\ServiceMakeCommand;
 use Illuminate\Support\ServiceProvider;
 
@@ -14,6 +15,7 @@ final class PackageServiceProvider extends ServiceProvider
             $this->commands(
                 commands: [
                     ServiceMakeCommand::class,
+                    RepositoryMakeCommand::class,
                 ],
             );
         }
