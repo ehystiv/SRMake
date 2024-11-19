@@ -13,14 +13,29 @@
     ],
     "license": "MIT",
 
+      "scripts": {
+      "test": "./vendor/bin/pest",
+      "fix": "./vendor/bin/pint",
+      "check": "./vendor/bin/pint --test -v",
+      "static": "./vendor/bin/phpstan analyse",
+      "all": [
+          "@test",
+          "@fix",
+          "@check",
+          "@static"
+      ]
+    },
+
     "require": {
         "php": "^8.0",
         "illuminate/support": "^11.32",
         "laravel/framework": "^11.0"
     },
     "require-dev": {
-      "pestphp/pest": "^3.5",
-      "orchestra/testbench": "^9.5"
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^9.5",
+        "pestphp/pest": "^3.5",
+        "phpstan/phpstan": "^1.12"
     },
 
     "autoload": {
