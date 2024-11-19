@@ -1,5 +1,5 @@
 # SRMake
- A simple generator for Respotory and Service classes
+ A simple generator for Repository and Service classes
 
 ## How to install
 
