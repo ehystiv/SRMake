@@ -7,13 +7,3 @@
 ```sh
 composer require --dev ehystiv/sr-make
 ```
-
-### Add service provider
-Add `Ehystiv\SRmake\Providers\PackageServiceProvider` to `providers.php`
-
-```php
-return [
-    App\Providers\AppServiceProvider::class,
-    Ehystiv\SRmake\Providers\PackageServiceProvider::class //here
-];
-```
