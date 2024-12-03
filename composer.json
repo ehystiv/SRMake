@@ -3,7 +3,7 @@
     "description": "Simple Repository & Service class generator for Laravel",
 
     "type": "library",
-    "version": "1.0.1",
+    "version": "1.0.2",
 
     "authors": [
       {
@@ -28,7 +28,7 @@
 
     "require": {
         "php": "^8.0",
-        "illuminate/support": "^11.32",
+        "illuminate/support": "^11.0",
         "laravel/framework": "^11.0"
     },
     "require-dev": {
